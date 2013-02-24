@@ -28,12 +28,12 @@ class Result
 
   def get_artist
     puts "What artist are you looking for?"
-    @name = (gets.to_s.downcase.gsub(" ", "+")).strip
+    @name = (gets.downcase.gsub(" ", "+")).strip
   end
 
   def get_location
     puts "Where are you located?"
-    @location = (gets.to_s.downcase.gsub(" ", "+")).strip
+    @location = (gets.downcase.gsub(" ", "+")).strip
   end
 
   #Sonkickr gem doesn't have a location look up from what I saw so use user input to call API and get location id
