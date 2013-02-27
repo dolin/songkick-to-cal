@@ -6,11 +6,7 @@ Up-to date verson is songkick-to-cal.rb. I've replaced my API key with 'Your API
 
 Pseudocode.rb is included to show my thought process before writing the code.
 
-Refactored individual methods into one class. Each instance of the Result class includes a hash with all of the shows for a given artist in a given location. 
-
-Current bugs:
-
-Not all artist/location lookups retrieve correct results. Still working on a patch. 
+Refactored individual methods into one class. Each instance of the Result class includes a hash with all of the shows for a given artist in a given location.  
 
 To Do:
 

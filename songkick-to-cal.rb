@@ -40,7 +40,7 @@ class Result
   def get_location_id(location)
     doc = open("http://api.songkick.com/api/3.0/search/locations.json?query='#{location}'&apikey=Your API Key").read
     location_hash = JSON.parse(doc)
-    @location_id = location_hash["resultsPage"]["results"]["location"][0].flatten[1]["id"]
+    @location_id = location_hash.flatten[1]["results"]["location"][0]["metroArea"]["id"]
   end
 
   def create_api_results(name, location_id)
